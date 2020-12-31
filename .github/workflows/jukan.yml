@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: JUKAN
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         JUKAN_COOKIE: ${{ secrets.JUKAN_COOKIE }}
