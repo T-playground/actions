@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: BAIDU
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         BAIDU_COOKIE: ${{ secrets.BAIDU_COOKIE }}
