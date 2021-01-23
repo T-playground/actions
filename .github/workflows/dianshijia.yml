@@ -27,6 +27,7 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
+          cd ~/Scripts
           npm install
       - name: 'Run [dianshijia]'
         if: env.DSJ_HEADERS
