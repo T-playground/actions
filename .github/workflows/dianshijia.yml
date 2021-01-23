@@ -31,7 +31,8 @@ jobs:
       - name: 'Run [dianshijia]'
         if: env.DSJ_HEADERS
         run: |
-          node ~/Scripts/Task/dianshijia.js
+          cd ~/Scripts
+          node Task/dianshijia.js
         env:
           DSJ_NOTIFY_CONTROL: ${{ secrets.DSJ_NOTIFY_CONTROL }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
